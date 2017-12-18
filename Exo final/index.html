@@ -1,0 +1,65 @@
+<!--doctype html-->
+<html lang="fr">
+    <head>
+        <title>Reseignements Anonymes</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <noscript>Veuillez activer JavaScript</noscript>
+        <div class="container">
+
+            <div class="boite1">
+                <div class="element">
+                    <label for="select">Veuillez saisir parmi la liste: </label>
+                    <select id="select">
+                        <option value="Like"> Like </option>
+                        <option value="Learn"> Learn </option>
+                        <option value="Not Like"> Not Like </option>
+                        <option value="Not Learn"> Not Learn </option>
+                    </select>
+                </div>
+                <div class="element2">
+                    <textarea id="texte" cols="50" rows="7" placeholder="Ne pas saisir votre avis sous la forme d'une liste pour une meilleur comprehension de votre message."></textarea>
+                </div>
+                <div class="element3">
+                    <button onclick="send();">Send</button>
+                    <button onclick="reset();">Reset</button>
+                </div>
+
+                <hr/>
+
+            </div>
+            <div class="boite2">
+                <!--Like -->
+                <div>
+                    <p>Like:</p>
+                    <p id="sentence"></p>
+                </div>
+                <!-- Learn -->
+                <div>
+                    <p>Learn:</p>
+                    <p id="sentence2"></p>
+                </div>
+                <!-- Not Like-->
+                <div>
+                    <p>Not Like:</p>
+                    <p id="sentence3"></p>
+                </div>
+               <!-- Not Learn-->
+                <div>
+                    <p>Not Learn:</p>
+                    <p id="sentence4"></p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </body>
+</html>
